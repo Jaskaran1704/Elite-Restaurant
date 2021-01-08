@@ -1,0 +1,214 @@
+/*Font imported from google*/
+
+
+/*CSS for full screen starts here*/
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+.header{
+    width:100%;
+    height:80px;
+    display:block;
+    background-color: #101010;
+    position: relative;
+}
+
+ 
+
+.inner_header{
+    width:1000px;
+    height:100%;
+    display:block;
+    margin:0 auto;
+}
+ 
+.logo_container{
+    height:100%;
+    display:table;
+    float:left;
+}
+
+.logo_container > h1{
+    color:white;
+    height:100%;
+    display:table-cell;
+    vertical-align: middle;
+    font-family:'Montserrat';
+    font-size:32px;
+    font-weight: 200;
+}
+
+.logo_container > h1 > span{
+    font-weight:800;
+}
+
+ 
+
+.navigation{
+    float:right;
+    height:100%;
+}
+
+.navigation > li > a{
+    height:50%;
+    display:table;
+    float:left;
+    color:white;
+}
+
+.navigation > a:last-child{
+    padding-right:0px;
+}
+
+.navigation> li:last-child:hover{
+  background-color: #ddd;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+  background-color: #3e8e41;
+  color: white;
+}
+
+
+
+.navigation > li{
+    display: table-cell;
+    vertical-align: middle;
+    height:100px;
+    font-family:'Montserrat';
+    font-size: 18px;
+   padding:5px 15px 3px 15px;
+}
+
+
+  
+/*CSS for header ends here*/
+
+  
+  /* Make the image responsive */
+
+  .container {
+    
+    height: 719px;
+  }
+
+  .container img {
+    width: 100%;
+    height: 719px; 
+   
+ }
+
+  
+  /* Style the button and place it in the middle of the container/image */
+  .container  .btn {
+      width:400px;
+      height:100px;
+    position: absolute;
+    top: calc(50%);
+    top: calc(50%);
+    left: 50%;
+    transform: translate(-50%, -120%);
+    background-color: #361818;
+    background: -webkit-linear-gradient(#eee, #333);
+    font-size: 40px;
+    padding:30px 60px 30px 60px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0.8;
+  }
+  
+   .btn:hover {
+    background-color: white;
+    width:400px;
+    height:100px;
+    opacity: 0.8;
+    font-size: 45px;
+    transition: 0.5s;
+  }
+
+/*Section pic gallery ends here*/
+
+/*CSS for footer starts here*/
+.footer{	
+        width: 100%;
+	height:30px;
+        background-color: #101010;
+        color:white;
+}
+
+.footer_center > p {
+    width:450px;
+    margin: 0 auto;
+    padding:5px;
+}
+
+
+/*CSS for footer ends here*/
+
+/*CSS for full screen ends here*/
+
+@media  screen and (max-width:992px) and (min-width:768px){
+    .header-right>a>img {
+        width: 25px;
+        height: 30px;
+    }
+    .header a {
+        padding: 5px 10px 10px 10px;
+    }
+
+    .container  .btn {
+        width: 260px;
+        height: 72px;
+        padding:10px 144px 35px 35px;
+         
+       }
+
+}
+
+@media  screen and (max-width:768px) and (min-width:600px){
+    .header img.logo {
+        width: 120px;
+    }
+    .header-right>a>img {
+        width: 20px;
+        height: 35px;
+    }
+    .header a {
+        padding: 5px 1px 7px 5px;
+    }
+    .container  .btn {
+        width: 260px;
+        height: 72px;
+        padding:10px 144px 35px 35px;
+         
+    }
+}
+
+@media only screen and (max-width:600px){
+    .header img.logo {
+        width: 80px;
+        height:95px;
+    }
+    .header-right>a>img {
+        width: 15px;
+        height: 25px;
+    }
+    .header a {
+        padding: 1px 1px 1px 1px;
+    }
+    .container  .btn {
+        width: 260px;
+        height: 72px;
+        padding:13px 1px 1px 1px;     
+    }
+  
+    .footer-left img {
+        width: 85%;
+    }
+}

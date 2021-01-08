@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header{
+    width:100%;
+    height:80px;
+    display:block;
+    background-color: #101010;
+}
+
+.inner_header{
+    width:1000px;
+    height:100%;
+    display:block;
+    margin:0 auto;
+}
+ 
+.logo_container{
+    height:100%;
+    display:table;
+    float:left;
+}
+
+.logo_container > h1{
+    color:white;
+    height:100%;
+    display:table-cell;
+    vertical-align: middle;
+    font-family:'Montserrat';
+    font-size:32px;
+    font-weight: 200;
+}
+
+.logo_container > h1 > span{
+    font-weight:800;
+}
+
+.navigation{
+    float:right;
+    height:100%;
+}
+
+.navigation > li > a{
+    height:100%;
+    display:table;
+    float:left;
+    color:white;
+}
+
+.navigation > a:last-child{
+    padding-right:0px;
+}
+
+.navigation > li{
+    display: table-cell;
+    vertical-align: middle;
+    height:100px;
+    font-family:'Montserrat';
+    font-size: 18px;
+    padding: 30px 30px;
+}
+
+/*CSS for section starts here*/
+section {
+    width: 90%;
+    height: 500px;
+    background-color:white;
+}
+
+section > h2 {
+    color: goldenrod;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    font-size: 1.8cm;
+}
+section > form-group{
+    width:50%;
+    background-color: white;
+}
+article {
+    width: 50%;
+    height: 500px;
+    font-size: 1.5em;
+    margin-top: 3em;
+}
+fieldset {
+    background: lightgray;
+    height:340px;
+}
+legend {
+    color: #fff;
+    font-size: 24px;
+    background: gray;
+    padding: 5px;
+    margin-left:10px;
+}
+/*CSS for article starts here*/
+/*CSS for article ends here*/
+
+form {
+    width: 500px;
+    height: 500px;
+    margin-left: 300px;
+    margin-top:100px;
+}
+/*CSS for aside starts here*/
+section>aside {
+   
+    width:40%;
+    margin-top: -461px;
+    float: right;
+}
+
+div {
+    display: inline;
+}
+
+label {
+    width: 170px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 19px;
+    text-align: right;
+    margin-right: 15px;
+}
+
+input {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.btn {
+    font-size: 15px;
+    border-radius: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: .5px;
+    margin-left:150px;
+  }
+ 
+  .btn-social:hover {
+    color: #fff;
+    opacity: .8;
+  }
+  
+  .btn-primary {
+    background-color: #F73F52;
+    border-color: #F73F52;
+  }
+  .btn-primary:disabled, .btn-primary.disabled, .btn-primary:hover, .btn-primary:active, .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:focus {
+    background-color: #c8081c;
+    border-color: #c8081c;
+    box-shadow: none;
+    outline: 0;
+  }
+  .btn-primary:active:hover {
+    background-color: #af0719;
+  }
+/*CSS for aside ends here*/
+/*CSS for section ends here*/
+/*CSS for footer starts here*/
+.footer{    
+        width: 100%;
+    height:30px;
+        background-color: #101010;
+        color:white;
+}
+.footer_center > p {
+    width:450px;
+    margin: 0 auto;
+    padding:5px;
+}
+/*CSS for footer ends here*/
+/*CSS for body ends here*/
+/*CSS for full screen ends here*/
+
+@media  screen and (max-width:992px) and (min-width:768px){
+    .header-right>a>img {
+        width: 25px;
+        height: 30px;
+    }
+    .header a {
+        padding: 5px 10px 10px 10px;
+    }
+}
+
+@media  screen and (max-width:768px) and (min-width:600px){
+    .header img.logo {
+        width: 120px;
+    }
+    .header-right>a>img {
+        width: 20px;
+        height: 35px;
+    }
+    .header a {
+        padding: 5px 1px 7px 5px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .header img.logo {
+        width: 80px;
+        height:95px;
+    }
+    .header-right>a>img {
+        width: 15px;
+        height: 25px;
+    }
+    .header a {
+        padding: 1px 1px 1px 1px;
+    }
+   
+  
+    .footer-left img {
+        width: 85%;
+    }
+}
